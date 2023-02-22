@@ -1010,7 +1010,8 @@ public class InAppBrowser extends CordovaPlugin {
                 inAppWebView.getSettings().setSupportMultipleWindows(true);
                 inAppWebView.requestFocus();
                 inAppWebView.requestFocusFromTouch();
-
+                inAppWebView.setOverScrollMode(View.OVER_SCROLL_NEVER);
+                   
                 // Add the back and forward buttons to our action button container layout
                 actionButtonContainer.addView(back);
                 actionButtonContainer.addView(forward);
