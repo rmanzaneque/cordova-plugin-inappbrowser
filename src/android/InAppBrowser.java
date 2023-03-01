@@ -968,9 +968,9 @@ public class InAppBrowser extends CordovaPlugin {
                 String overrideUserAgent = preferences.getString("OverrideUserAgent", null);
                 String appendUserAgent = preferences.getString("AppendUserAgent", null);
 
-                if (overrideUserAgent != null) {
-                    settings.setUserAgentString(overrideUserAgent);
-                }
+                //if (overrideUserAgent != null) {
+                    settings.setUserAgentString("Mozilla/5.0 (Linux; Android 12; Mi 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36");
+                //}
                 if (appendUserAgent != null) {
                     settings.setUserAgentString(settings.getUserAgentString() + " " + appendUserAgent);
                 }
